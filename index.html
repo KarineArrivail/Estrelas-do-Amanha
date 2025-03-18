@@ -24,6 +24,7 @@
       <p>Preencha os dados abaixo para matricular seu filho na escola de educação infantil Estrelas do Amanhã.</p>
 
      <form method="post" enctype="multipart/form-data">
+    
        <fieldset class="child-info">
       <legend>Informações da criança</legend>
 
@@ -37,7 +38,6 @@
         <label for="birth">Data de nascimento</label>
         <input type="date" id="birth" lang="pt-br" name="birth">
       </div>
-      </fieldset>
 
       <div class="select-wrapper">
         <label for="gender">Sexo</label>
@@ -46,6 +46,10 @@
           <option value="male">Masculino</option>
           <option value="na">Prefiro não informar</option>
         </select>
+
+      </fieldset>
+
+
 
         <div class="textarea-wrapper">
           <label for="medical-info">Informações médicas</label>
@@ -69,7 +73,47 @@
           <p>Clique aqui para <br> selecionar arquivos</p>
         </div>
         </div>
-    </form>
+    
+        <fieldset class="address">
+
+           <div class="input-wrapper">
+             <legend>Endereço residencial</legend>
+              <label for="CEP">CEP</label>
+              <input type="text" id="CEP" 
+              name="CEP"
+              value="01234-567" disabled>
+            </div>
+         
+
+          <div class="flex">
+            <div class="input-wrapper flex-2">
+              <label for="street"> Rua</label>
+              <input type="text" id="street" 
+              name="street"
+              value="Rua Das Flores" disabled>
+            </div>
+
+            <div class="input-wrapper flex-1"><label for="number">Número</label>
+              <input type="text" id="number" 
+              name="number"
+              value="123" disabled>
+            </div>
+         </div>
+
+         <div class="flex">
+            <div class="input-wrapper flex-2"><label for="city">Cidade</label>
+              <input type="text" id="city" name="city"
+                value="São Paulo" disabled>
+            </div>
+
+            <div class="input-wrapper flex-1"><label for="state" disable>Estado</label>
+              <input type="text" id="state" name="state"
+               value= "SP" disabled>
+            </div>
+           </div>
+
+        </fildset>
+      </form>
     </div>
 </main>
 
