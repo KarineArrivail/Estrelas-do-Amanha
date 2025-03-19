@@ -30,6 +30,7 @@ main {
 aside {
   padding: 4rem;
   background-color: var(--surface-secondary);
+ 
 
   & .aside-container {
     max-width: 31rem;
