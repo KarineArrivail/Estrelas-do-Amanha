@@ -19,23 +19,38 @@ main {
     align-items: center;
     gap: .5 rem;
     margin-bottom: 1.5rem;
+
   }
+
+  & .back:hover {
+    color: var(--text-highlight);
+  }
+
+  & .img:hover {
+    transform: scale(1.1);
+  }
+
 
   & h1 {
     font: 600 1.5rem/1.25 var(--font-family);
     margin-bottom: .5rem;
   }
+
+  & h1:hover {
+    color: var(--text-highlight);
+  }
+  
 }
 
 aside {
   padding: 4rem;
   background-color: var(--surface-secondary);
- 
+
 
   & .aside-container {
     max-width: 31rem;
 
-    & > img {
+    &>img {
       margin-top: 2rem;
     }
   }
